@@ -4,8 +4,8 @@ type PropsCounterComponent = {
     title: string
     minScore: number
     maxScore: number
-    counterValue: () => void
-    resetCounter: () => void
+    calcCounter: () => void
+    getCounter: () => void
     counter: number
 }
 
@@ -25,10 +25,10 @@ export function CounterComponent(props: PropsCounterComponent) {
 
             <div className='ButtonSettings'>
                 <UniversalButton name={'Add counter'}
-                                 callback={props.counterValue}
+                                 callback={props.calcCounter}
                                  disabled={props.counter === props.maxScore}/>
                 <UniversalButton name={'Reset'}
-                                 callback={props.resetCounter}
+                                 callback={props.getCounter}
                                  disabled={props.counter === props.minScore}/>
             </div>
 

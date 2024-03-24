@@ -1,3 +1,46 @@
-.error-message{
-    color: red;
+
+.App {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-gap: 50px; /* Отступ между блоками */
+    place-content: center;
+    height: 500px; /* Высота контейнера */
 }
+
+.Counter {
+    display: grid;
+    place-items: center;
+    color: #500317;
+}
+
+.Counter h1 {
+    font-size: 43px; /* установите нужный размер шрифта */
+}
+
+.DisplayCounter {
+    display: grid;
+    place-items: center;
+    font-size: 43px; /* установите нужный размер шрифта */
+}
+
+.error-message {
+    color: red;
+    font-size: 63px; /* установите нужный размер шрифта */
+}
+
+.ButtonSettings {
+    display: flex;
+    justify-content: center;
+}
+
+
+.ButtonSettings button {
+    height: 40px; /* установите нужную высоту */
+    width: 120px; /* установите нужную ширину */
+    border-radius: 5px; /* установите нужное закругление */
+}
+
+
+
+
+

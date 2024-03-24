@@ -12,11 +12,11 @@ function App() {
     const [counter, setCounter] = useState(MINVALUE)
 
     // Функции подсчёта чисел
-    function counterValue() {
+    function calcCounter() {
         setCounter(counter + 1)
     }
-
-    function resetCounter() {
+    // функция сброса значения счётчика
+    function getCounter() {
         setCounter(MINVALUE)
     }
 
@@ -27,8 +27,16 @@ function App() {
                 title={title}
                 minScore={MINVALUE}
                 maxScore={MAXVALUE}
-                counterValue={counterValue}
-                resetCounter={resetCounter}
+                calcCounter={calcCounter}
+                getCounter={getCounter}
+                counter={counter}
+            />
+            <CounterComponent
+                title={title}
+                minScore={MINVALUE}
+                maxScore={MAXVALUE}
+                calcCounter={calcCounter}
+                getCounter={getCounter}
                 counter={counter}
             />
         </div>
