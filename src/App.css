@@ -1,35 +1,3 @@
-body {
-  color: gray;
-}
-
-.App {
-    display: grid;
-    grid-template-columns: 3fr;
-    margin-top: 150px;
-}
-
-
-.CounterComponentStyle {
-    grid-row: auto;
-    justify-self: right;
-    width: 350px;
-    text-align: center;
-    background-color: bisque;
-    padding: 80px;
-    border-radius: 30px;
-}
-
-.numberStyle {
-    font-size: 125px;
-}
-
-.buttonStyle {
-    display: grid;
-    height: 70px;
-    padding: 30px;
-}
-
-
-.error-message {
+.error-message{
     color: red;
 }
